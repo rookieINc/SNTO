@@ -33,3 +33,6 @@
 
 #useless files
 useless/*
+
+#Core dump files
+core.*

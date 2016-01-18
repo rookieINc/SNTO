@@ -6,3 +6,7 @@ FEE_PATH=$(SNTO_PATH)/FEE
 ALL:
 	cd $(KDK_PATH) && make && cp $(KDK_PATH)/inc/* $(SNTO_PATH)/inc/ && cp $(KDK_PATH)/lib/* $(SNTO_PATH)/lib/
 	cd $(FEE_PATH) && make && cp $(FEE_PATH)/inc/* $(SNTO_PATH)/inc/ && cp $(FEE_PATH)/lib/* $(SNTO_PATH)/lib/
+
+clean:
+	cd $(KDK_PATH) && make clean
+	cd $(FEE_PATH) && make clean
